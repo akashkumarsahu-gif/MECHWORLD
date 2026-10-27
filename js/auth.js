@@ -1,0 +1,8 @@
+const API = "/api";
+const $ = (id) => document.getElementById(id);
+let mode = "login";
+$("year").textContent = new Date().getFullYear();
+function setMode(next){mode=next; $("loginTab").classList.toggle("active",mode==="login"); $("registerTab").classList.toggle("active",mode==="register"); $("nameWrap").hidden=mode!=="register"; $("name").required=mode==="register"; $("password").autocomplete=mode==="login"?"current-password":"new-password"; $("authHeading").innerHTML=mode==="login"?'Welcome <span>back.</span>':'Join <span>MECHWORLD.</span>'; $("submitAuth").innerHTML=mode==="login"?'Log in <span>↗</span>':'Create account <span>↗</span>'; $("authStatus").textContent="";}
+$("loginTab").addEventListener("click",()=>setMode("login")); $("registerTab").addEventListener("click",()=>setMode("register"));
+if(localStorage.getItem("mw_token")) location.href="dashboard.html";
+$("authForm").addEventListener("submit",async e=>{e.preventDefault();const status=$("authStatus");status.classList.remove("error");status.textContent="Working…";const body={email:$("email").value.trim(),password:$("password").value};if(mode==="register")body.name=$("name").value.trim();try{const res=await fetch(`${API}/auth/${mode==="register"?"register":"login"}`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});const data=await res.json();if(!res.ok)throw new Error(data.detail||"Could not complete request.");localStorage.setItem("mw_token",data.access_token);localStorage.setItem("mw_user",JSON.stringify(data.user));location.href="dashboard.html";}catch(err){status.textContent=err.message||"Could not connect to backend. Start the FastAPI server and open this site at http://127.0.0.1:8000.";status.classList.add("error");}});

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MECHWORLD — a modern mechanical engineering learning hub.">
+  <title>MECHWORLD | Engineering, Designed Better</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="MECHWORLD home"><span class="brand-mark">M<span>W</span></span><span class="brand-name">MECH<span>WORLD</span><small>ENGINEERING • DESIGN • INNOVATION</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a><a href="#domains">Explore</a><a href="#tools">Tools</a><a href="#projects">Projects</a><a href="#about">About</a>
+      </nav>
+      <div class="nav-actions"><button class="icon-button" id="themeToggle" aria-label="Toggle theme">☾</button><a class="button button-small" href="#tools">Explore tools <span>↗</span></a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> THE MECHANICAL ENGINEERING HUB</div>
+          <h1>Ideas become<br><span>engineering.</span></h1>
+          <p class="hero-lede">A practical space to explore mechanical engineering, understand the science behind machines, and turn concepts into working ideas.</p>
+          <div class="hero-cta"><a class="button" href="#domains">Explore disciplines <span>↘</span></a><a class="button button-ghost" href="#tools">Try engineering tools</a></div>
+          <div class="hero-proof"><div class="proof-avatars"><span>CAD</span><span>ME</span><span>⚙</span></div><p><strong>Learn. Design. Build.</strong><br>One concept at a time.</p></div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="visual-frame"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=85" alt="Engineer working with industrial equipment"><div class="visual-overlay"></div><div class="visual-caption"><span class="caption-index">01 / FIELD NOTES</span><strong>Where theory meets the real world.</strong></div></div>
+          <div class="floating-card floating-top"><span class="float-icon">⌘</span><div><small>DESIGN MINDSET</small><strong>Think in systems.</strong></div></div>
+          <div class="floating-card floating-bottom"><span class="float-icon">↗</span><div><small>BUILT FOR LEARNERS</small><strong>Curiosity, engineered.</strong></div></div>
+          <div class="visual-ring"></div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>01 — MECHANICAL DESIGN</span><span>02 — THERMAL SCIENCES</span><span>03 — MANUFACTURING</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Engineering disciplines"><div class="ticker-track"><span>MECHANICAL DESIGN ✳</span><span>THERMODYNAMICS ✳</span><span>CAD & MODELLING ✳</span><span>MANUFACTURING ✳</span><span>FLUID MECHANICS ✳</span><span>MATERIALS ✳</span></div></section>
+
+    <section class="section domains" id="domains">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="eyebrow">01 / EXPLORE THE FIELD</div><h2>Big ideas. <span>Real mechanics.</span></h2></div><p>Explore the core disciplines that power products, machines, infrastructure and industry.</p></div>
+        <div class="domain-grid">
+          <article class="domain-card domain-feature reveal"><div class="card-top"><span class="card-number">01</span><span class="card-symbol">↗</span></div><div class="domain-art art-cad"><div class="blueprint-circle"></div><div class="blueprint-cross"></div><div class="blueprint-gear">⚙</div><span>CAD / 3D</span></div><div class="domain-info"><h3>Mechanical Design</h3><p>From technical drawings to components engineered for performance.</p><a href="#tools" class="inline-link">Explore design tools <span>→</span></a></div></article>
+          <article class="domain-card reveal"><div class="card-top"><span class="card-number">02</span><span class="card-symbol">↗</span></div><div class="domain-art art-thermal"><span class="thermal-symbol">∿</span><span class="art-label">ENERGY / HEAT</span></div><div class="domain-info"><h3>Thermodynamics</h3><p>Understand energy, heat transfer, engines and power cycles.</p><a href="#tools" class="inline-link">Try a calculator <span>→</span></a></div></article>
+          <article class="domain-card reveal"><div class="card-top"><span class="card-number">03</span><span class="card-symbol">↗</span></div><div class="domain-art art-manufacturing"><div class="factory-shape">▥</div><span class="art-label">MAKE / PRODUCE</span></div><div class="domain-info"><h3>Manufacturing</h3><p>Discover machining, casting, welding and modern production.</p><a href="#projects" class="inline-link">See project ideas <span>→</span></a></div></article>
+          <article class="domain-card reveal"><div class="card-top"><span class="card-number">04</span><span class="card-symbol">↗</span></div><div class="domain-art art-fluid"><span>≈</span><i></i><b></b><small>FLOW / PRESSURE</small></div><div class="domain-info"><h3>Fluid Mechanics</h3><p>Explore pressure, flow, pumps and the movement of fluids.</p><a href="#projects" class="inline-link">Explore concepts <span>→</span></a></div></article>
+          <article class="domain-card reveal"><div class="card-top"><span class="card-number">05</span><span class="card-symbol">↗</span></div><div class="domain-art art-material"><div class="material-bars"><i></i><i></i><i></i><i></i><i></i></div><span class="art-label">MATERIALS / STRENGTH</span></div><div class="domain-info"><h3>Strength of Materials</h3><p>Connect loads, stress, strain and material behaviour.</p><a href="#tools" class="inline-link">Calculate stress <span>→</span></a></div></article>
+          <article class="domain-card reveal"><div class="card-top"><span class="card-number">06</span><span class="card-symbol">↗</span></div><div class="domain-art art-robot"><div class="robot-arm"><i></i><i></i><i></i><b></b></div><span class="art-label">AUTOMATION / ROBOTICS</span></div><div class="domain-info"><h3>Robotics & Automation</h3><p>See how mechanisms, sensors and control create smart systems.</p><a href="#projects" class="inline-link">Find inspiration <span>→</span></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tools-section" id="tools">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="eyebrow">02 / INTERACTIVE WORKBENCH</div><h2>Useful tools for <span>real problems.</span></h2></div><p>Try quick engineering calculators. Enter your values to get an instant result right in your browser.</p></div>
+        <div class="tool-layout">
+          <div class="tool-tabs reveal"><button class="tool-tab active" data-tool="gear"><span>⚙</span><span><strong>Gear ratio</strong><small>Speed & teeth</small></span><b>↗</b></button><button class="tool-tab" data-tool="stress"><span>↗</span><span><strong>Normal stress</strong><small>Force & area</small></span><b>↗</b></button><button class="tool-tab" data-tool="power"><span>ϟ</span><span><strong>Mechanical power</strong><small>Torque & RPM</small></span><b>↗</b></button><button class="tool-tab" data-tool="temperature"><span>℃</span><span><strong>Temperature</strong><small>°C, °F & K</small></span><b>↗</b></button></div>
+          <div class="calculator reveal">
+            <div class="calculator-head"><div><div class="eyebrow">ENGINEERING CALCULATOR</div><h3 id="calcTitle">Gear Ratio Calculator</h3></div><span class="calc-live"><i></i> LIVE RESULT</span></div>
+            <div id="calcFields" class="calc-fields"></div>
+            <div class="result-panel"><span id="resultLabel">OUTPUT SPEED</span><div><strong id="calcResult">—</strong><span id="resultUnit">RPM</span></div><p id="calcExplanation">Enter the gear teeth and input speed to calculate the output.</p></div>
+            <p class="calc-note">For learning and preliminary calculations. Verify assumptions before real engineering use.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="eyebrow">03 / BUILD YOUR SKILLS</div><h2>Small projects. <span>Big learning.</span></h2></div><p>Start with approachable projects that combine engineering fundamentals with practical tools.</p></div>
+        <div class="project-grid">
+          <article class="project-card reveal"><div class="project-visual project-gear"><span>⚙</span><small>INPUT → OUTPUT</small></div><div class="project-meta"><span>PYTHON / MECHANISMS</span><span>PROJECT 01</span></div><h3>Gear Ratio Calculator</h3><p>Build a small Python app that calculates gear ratio, output speed and speed reduction.</p><a href="#tools" class="inline-link">Try the web version <span>→</span></a></article>
+          <article class="project-card reveal"><div class="project-visual project-stress"><span>σ = F / A</span><small>FORCE / AREA</small></div><div class="project-meta"><span>MECHANICS / PYTHON</span><span>PROJECT 02</span></div><h3>Stress Calculator</h3><p>Explore how applied force and cross-sectional area affect normal stress.</p><a href="#tools" class="inline-link">Calculate stress <span>→</span></a></article>
+          <article class="project-card reveal"><div class="project-visual project-cad"><span>▱</span><small>SKETCH → MODEL</small></div><div class="project-meta"><span>CAD / DESIGN</span><span>PROJECT 03</span></div><h3>CAD Design Portfolio</h3><p>Organise your 2D drawings and 3D models into a clear engineering portfolio.</p><a href="#about" class="inline-link">Get inspired <span>→</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-band" id="about"><div class="container about-layout reveal"><div class="about-mark">MW<span>↗</span></div><div><div class="eyebrow">04 / WHY MECHWORLD</div><h2>Built for the curious.<br><span>Made for the makers.</span></h2></div><p>MECHWORLD is a growing learning space for engineering students and curious builders — bringing concepts, calculations and design inspiration into one place.</p></div></section>
+
+    <section class="section contact-section" id="contact"><div class="container contact-layout"><div class="reveal"><div class="eyebrow">05 / KEEP IN TOUCH</div><h2>Have an idea?<br><span>Let's engineer it.</span></h2><p>Use the form to prepare a message in your email app. No message is sent automatically.</p></div><form id="contactForm" class="contact-form reveal"><label for="contactName">Your name</label><input id="contactName" required placeholder="e.g. Alex Kumar"><label for="contactEmail">Email address</label><input id="contactEmail" type="email" required placeholder="you@example.com"><label for="contactSubject">What is it about?</label><input id="contactSubject" required placeholder="Project, collaboration, question..."><label for="contactMessage">Your message</label><textarea id="contactMessage" required rows="4" placeholder="Tell us a little about your idea..."></textarea><button class="button" type="submit">Prepare email <span>↗</span></button><p id="formStatus" class="form-status" aria-live="polite"></p></form></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark">M<span>W</span></span><span class="brand-name">MECH<span>WORLD</span><small>ENGINEERING • DESIGN • INNOVATION</small></span></a><p>Explore the science. Understand the system.<br>Build what comes next.</p><div class="footer-nav"><a href="#domains">Disciplines</a><a href="#tools">Tools</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> MECHWORLD</span><span>MADE FOR ENGINEERING MINDS <b>✳</b></span></div></footer>
+</body>
+</html>
